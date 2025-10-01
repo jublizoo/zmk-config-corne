@@ -35,23 +35,13 @@
     };
 };
 
-
-/ {
-    behaviors {
-        mt: behavior_mod_tap {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT";
-            #binding-cells = <2>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-        };
-
-        lt: behavior_layer_tap {
-            compatible = "zmk,behavior-layer-tap";
-            label = "LT";
-            #binding-cells = <2>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-        };
-    };
+&mt {
+    quick_tap_ms = <0>;
+    flavor = "tap-preferred";
 };
+
+&lt {
+    quick_tap_ms = <0>;
+    flavor = "tap-preferred";
+};
+
