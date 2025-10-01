@@ -19,7 +19,7 @@
                 &none   &kp A      &kp S      &kp D        &kp F       &kp G        &kp H       &kp J        &kp K       &kp L       &kp SEMI    &none
             	&none   &kp Z      &kp X      &kp C        &kp V       &kp B        &kp N       &kp M        &kp COMMA   &kp DOT     &kp FSLH    &none
 
-                		&mt LSHFT TAB   &kt BSPC   &mt LGUI ESC     &lt 1   &kp SPACE &mt RALT ENTER   
+                		&mt LSHFT TAB   &kp BSPC   &mt LGUI ESC     &mo 1   &kp SPACE &mt RALT ENTER
             >;
         };
 
