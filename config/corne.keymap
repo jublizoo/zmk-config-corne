@@ -18,7 +18,7 @@
                 &none   &kp A      &kp S      &kp D        &kp F       &kp G        &kp H       &kp J        &kp K       &kp L       &kp SEMI    &none
             	&none   &kp Z      &kp X      &kp C        &kp V       &kp B        &kp N       &kp M        &kp COMMA   &kp DOT     &kp FSLH    &none
 
-                		&mt LGUI ESC   &mt LSHFT TAB   &kp SPACE               &lt 1 BSPC   &kp RALT   &mt LCTL ENTER 
+                		&mt LGUI ESC   &mt LSHFT TAB   &kp SPACE               &lt 1 BSPC   &mt RALT ENTER   &kt LCTL
             >;
         };
 
@@ -36,3 +36,22 @@
 };
 
 
+/ {
+    behaviors {
+        mt: behavior_mod_tap {
+            compatible = "zmk,behavior-mod-tap";
+            label = "MT";
+            #binding-cells = <2>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+        };
+
+        lt: behavior_layer_tap {
+            compatible = "zmk,behavior-layer-tap";
+            label = "LT";
+            #binding-cells = <2>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+        };
+    };
+};
